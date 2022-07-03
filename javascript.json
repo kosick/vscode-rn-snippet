@@ -1,0 +1,47 @@
+{
+  "View style height": {
+    "prefix": "vsh",
+    "body": [
+      "<View style={{ height: ${1:0} }} />"
+    ],
+    "description": "View style height"
+  },
+  "View style width": {
+    "prefix": "vsw",
+    "body": [
+      "<View style={{ width: ${1:0} }} />"
+    ],
+    "description": "View style width"
+  },
+  "View flexDirection Row": {
+    "prefix": "vsr",
+    "body": [
+      "<View style={{ flexDirection: 'row', alignItems: 'center' }}>",
+        "\t<View>$1</View>",
+      "</View>"
+    ],
+    "description": "View flexDirection Row"
+  },
+  "TouchableOpacity with text": {
+    "prefix": "tout",
+    "body": [
+      "<TouchableOpacity hitSlop={{ top: 8, left: 8, bottom: 8, right: 8 }} onPress={() => {$2}}>",
+        "\t<Text style={{ color: 'blue', textDecorationLine: 'underline' }}>$1</Text>",
+      "</TouchableOpacity>"
+    ],
+    "description": "TouchableOpacity with text"
+  },
+  "UseNavigation" : {
+    "prefix": "usen",
+    "body": [
+      "import { useNavigation } from '@react-navigation/native';",
+      "const navigation = useNavigation();"
+    ],
+    "description": "TouchableOpacity with text"
+  },
+  "useDB": {
+    "prefix": "usedb",
+    "body": ["const { db } = useDB();"],
+    "description": "useDB"
+  }
+}
